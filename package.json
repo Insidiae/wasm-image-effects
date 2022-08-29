@@ -1,0 +1,18 @@
+{
+	"name": "wasm-image-effects",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm wasm && vite",
+		"wasm": "wasm-pack build ./my-crate --target web",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"typescript": "^4.6.4",
+		"vite": "^3.0.7",
+		"vite-plugin-wasm-pack": "^0.1.12"
+	}
+}
+
