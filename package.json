@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "pnpm wasm && vite",
 		"wasm": "wasm-pack build ./my-crate --target web",
-		"build": "tsc && vite build",
+		"build": "pnpm wasm && tsc && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
